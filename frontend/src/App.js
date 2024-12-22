@@ -16,6 +16,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* for user */}
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/list" element={<List />} />
@@ -23,11 +24,16 @@ const App = () => {
         <Route path="/cafe_shop" element={<CafeShop />} />
         <Route path="/pagoda" element={<Pagoda />} />
         <Route path="/restaurant" element={<Restaurant />} />
-
         <Route path="/food_detail" element={<FoodDetail />} />
         <Route path="/place_detail" element={<PlaceDetail />} />
         <Route path="/collections" element={<Collections />} />
         <Route path="/search" element={<Search />} />
+        {/* for user */}
+
+        {/* for admin */}
+        <Route path="/dashboard" element={<Home />} />
+        <Route path="/posts" element={<Post />} />
+        {/* for admin */}
       </Routes>
     </BrowserRouter>
   );

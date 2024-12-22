@@ -5,13 +5,13 @@ function Banner() {
   return (
     <>
       <div fluid>
-        <Row>
+        <Row className="my-3">
           <Col xs={12} sm={6}>
             <div>
               <img
                 src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8fDA%3D"
                 alt=""
-                className="w-100"
+                className="w-100 "
               />
             </div>
           </Col>
