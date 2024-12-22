@@ -12,7 +12,7 @@ mongoose
   .connect(
     process.env.MONGO_LOCAL_STR || "mongodb://127.0.0.1:27017/sarmaltwarmal"
   )
-  .then((res) => console.log(`mongodb connect!`))
+  .then(() => console.log(`mongodb connect!`))
   .catch((e) => console.log(`mongodb error : ${e}`));
 
 app.listen(process.env.PORT || 3000, (err) => {
