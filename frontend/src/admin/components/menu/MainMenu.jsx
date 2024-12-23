@@ -5,7 +5,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 const MainMenu = () => {
   return (
-    <Container>
+    <Container className="sticky-top">
       <div className="fs-5 text-light text-center">
         <Link
           to={"/dashboard"}

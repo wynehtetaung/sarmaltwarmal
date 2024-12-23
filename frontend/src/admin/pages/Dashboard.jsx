@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import BasicInfo from "../components/dashboard/BasicInfo";
 import Head from "../components/dashboard/Head";
 import RecentUser from "../components/dashboard/RecentUser";

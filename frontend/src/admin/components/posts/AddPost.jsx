@@ -16,7 +16,7 @@ const AddPost = () => {
       <Container fluid>
         <Row>
           <Col xs={2} className="bg-dark">
-            <div className="min vh-100">
+            <div className="min vh-100 sticky-top">
               {" "}
               <MainMenu />
             </div>

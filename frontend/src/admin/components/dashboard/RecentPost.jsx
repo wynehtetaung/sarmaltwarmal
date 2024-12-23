@@ -1,26 +1,40 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
+import { Link } from "react-router-dom";
 
 const RecentPost = () => {
   return (
     <div>
-      <div className="fs-5 mb-5">
+      <Container className="fs-5 mb-5">
         <p className="text-decoration-underline">Recent Posts</p>{" "}
         <ListGroup numbered className="border-1">
           <ListGroup.Item action variant="dark">
-            Cras justo odio
+            <Link to="/dashboard" className="text-decoration-none text-dark">
+              {" "}
+              Post Title 1
+            </Link>
           </ListGroup.Item>
           <ListGroup.Item action variant="dark">
-            Dapibus ac facilisis in
+            <Link to="/add_post" className="text-decoration-none text-dark">
+              {" "}
+              Post Title 2
+            </Link>
           </ListGroup.Item>
           <ListGroup.Item action variant="dark">
-            Morbi leo risus
+            <Link to="/post_list" className="text-decoration-none text-dark">
+              {" "}
+              Post Title 3
+            </Link>
           </ListGroup.Item>
           <ListGroup.Item action variant="dark">
-            Porta ac consectetur ac
+            <Link to="/users" className="text-decoration-none text-dark">
+              {" "}
+              Post Title 4
+            </Link>
           </ListGroup.Item>
         </ListGroup>
-      </div>
+      </Container>
     </div>
   );
 };

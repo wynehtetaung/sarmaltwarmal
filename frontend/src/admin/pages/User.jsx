@@ -1,10 +1,9 @@
 import React from "react";
-
 import { Col, Container, Row } from "react-bootstrap";
 import MainMenu from "../components/menu/MainMenu";
-import Dashboard from "./Dashboard";
+import UserList from "../components/user/UserList";
 
-const AdminHome = () => {
+const User = () => {
   return (
     <div>
       <Container fluid>
@@ -16,7 +15,7 @@ const AdminHome = () => {
             </div>
           </Col>
           <Col xs={10}>
-            <Dashboard />
+            <UserList />
           </Col>
         </Row>
       </Container>
@@ -24,4 +23,4 @@ const AdminHome = () => {
   );
 };
 
-export default AdminHome;
+export default User;

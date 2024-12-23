@@ -14,6 +14,7 @@ import "../src/App.css";
 import AdminHome from "./admin/pages/AdminHome";
 import AddPost from "./admin/components/posts/AddPost";
 import PostList from "./admin/components/posts/PostList";
+import User from "./admin/pages/User";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/dashboard" element={<AdminHome />} />
         <Route path="/add_post" element={<AddPost />} />
         <Route path="/post_list" element={<PostList />} />
+        <Route path="/users" element={<User />} />
 
         {/* for admin */}
       </Routes>
