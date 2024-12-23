@@ -27,13 +27,13 @@ const MainMenu = () => {
               id="dropdown-basic"
               className="w-100"
             >
-              Users
+              Posts
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="/posts">Add Post</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Post List</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              <Dropdown.Item href={"/add_post"}>Add Post</Dropdown.Item>
+              <Dropdown.Item href={"/post_list"}>Post List</Dropdown.Item>
+              {/* <Dropdown.Item href={"/add_post"}>Add Post</Dropdown.Item> */}
             </Dropdown.Menu>
           </Dropdown>
         </div>

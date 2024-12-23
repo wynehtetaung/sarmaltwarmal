@@ -11,6 +11,9 @@ import CafeShop from "./components/list/CafeShop";
 import Pagoda from "./components/list/Pagoda";
 import Restaurant from "./components/list/Restaurant";
 import "../src/App.css";
+import AdminHome from "./admin/pages/AdminHome";
+import AddPost from "./admin/components/posts/AddPost";
+import PostList from "./admin/components/posts/PostList";
 
 const App = () => {
   return (
@@ -31,8 +34,10 @@ const App = () => {
         {/* for user */}
 
         {/* for admin */}
-        <Route path="/dashboard" element={<Home />} />
-        <Route path="/posts" element={<Post />} />
+        <Route path="/dashboard" element={<AdminHome />} />
+        <Route path="/add_post" element={<AddPost />} />
+        <Route path="/post_list" element={<PostList />} />
+
         {/* for admin */}
       </Routes>
     </BrowserRouter>

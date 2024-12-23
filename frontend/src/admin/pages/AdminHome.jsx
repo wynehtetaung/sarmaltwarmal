@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import MainMenu from "../components/menu/MainMenu";
 import Dashboard from "./Dashboard";
 
-const Home = () => {
+const AdminHome = () => {
   return (
     <div>
       <Container fluid>
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AdminHome;
