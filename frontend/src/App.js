@@ -15,6 +15,7 @@ import AdminHome from "./admin/pages/AdminHome";
 import AddPost from "./admin/components/posts/AddPost";
 import PostList from "./admin/components/posts/PostList";
 import User from "./admin/pages/User";
+import Comment from "./admin/pages/Comment";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/add_post" element={<AddPost />} />
         <Route path="/post_list" element={<PostList />} />
         <Route path="/users" element={<User />} />
+        <Route path="/comments" element={<Comment />} />
 
         {/* for admin */}
       </Routes>
