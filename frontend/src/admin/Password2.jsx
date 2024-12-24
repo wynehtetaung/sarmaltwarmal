@@ -6,10 +6,10 @@ const Password2 = () => {
   const [password, setPassword] = React.useState("");
 
   return (
-    <div className="bg-brown min-vh-100 pt-5">
+    <div className="bg-brown">
       <Container>
-        <div className="pt-5">
-          <Row className="w-25 mx-auto pt-5">
+        <div>
+          <Row className="w-25 min-vh-100 justify-content-center align-items-center mx-auto">
             <Form>
               <Form.Group
                 className="mb-3"

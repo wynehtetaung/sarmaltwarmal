@@ -20,6 +20,7 @@ import Rating from "./admin/pages/Rating";
 import CardDetail from "./admin/components/card/CardDetail";
 import AdminLogin from "./admin/AdminLogin";
 import Password2 from "./admin/Password2";
+import Error from "./pages/Error";
 
 const App = () => {
   return (
@@ -27,6 +28,8 @@ const App = () => {
       <Routes>
         {/* for user */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+
         <Route path="/profile" element={<Profile />} />
         <Route path="/list" element={<List />} />
         <Route path="/street_food" element={<StreetFood />} />
@@ -38,6 +41,8 @@ const App = () => {
         <Route path="/collections" element={<Collections />} />
         <Route path="/search" element={<Search />} />
         {/* for user */}
+
+        <Route path="*" element={<Error />} />
 
         {/* for admin */}
         <Route path="/admin_login" element={<AdminLogin />} />
