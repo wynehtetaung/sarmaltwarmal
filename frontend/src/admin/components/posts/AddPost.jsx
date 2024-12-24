@@ -70,6 +70,7 @@ const AddPost = () => {
                       <Form.Control
                         required
                         type="file"
+                        accept="image/*"
                         onChange={handleChange}
                       />
                       <img src={file} alt="" className="w-25" />
@@ -91,6 +92,7 @@ const AddPost = () => {
                       <Form.Control
                         required
                         type="file"
+                        accept="image/*"
                         onChange={handleChange}
                       />
                       <img src={file} alt="" className="w-25" />
@@ -101,6 +103,7 @@ const AddPost = () => {
                       <Form.Control
                         required
                         type="file"
+                        accept="image/*"
                         onChange={handleChange}
                       />
                       <img src={file} alt="" className="w-25" />
@@ -140,7 +143,7 @@ const AddPost = () => {
                     </Form.Group>
                   </Col>
                 </Row>
-                <Button variant="warning" className="w-100 mb-5">
+                <Button variant="warning" className="w-100 mb-5" oncli>
                   Add
                 </Button>
               </Form>
