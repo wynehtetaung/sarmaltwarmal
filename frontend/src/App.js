@@ -18,6 +18,8 @@ import User from "./admin/pages/User";
 import Comment from "./admin/pages/Comment";
 import Rating from "./admin/pages/Rating";
 import CardDetail from "./admin/components/card/CardDetail";
+import AdminLogin from "./admin/AdminLogin";
+import Password2 from "./admin/Password2";
 
 const App = () => {
   return (
@@ -38,6 +40,9 @@ const App = () => {
         {/* for user */}
 
         {/* for admin */}
+        <Route path="/admin_login" element={<AdminLogin />} />
+        <Route path="/password2" element={<Password2 />} />
+
         <Route path="/dashboard" element={<AdminHome />} />
         <Route path="/add_post" element={<AddPost />} />
         <Route path="/post_list" element={<PostList />} />
