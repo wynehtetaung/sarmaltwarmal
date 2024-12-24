@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const UserItem = ({ no }) => {
   const deleteingUser = () => {
-    alert("Are you sure to delete?");
+    window.confirm("Are you sure to delete?");
   };
 
   return (

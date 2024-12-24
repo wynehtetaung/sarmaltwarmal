@@ -52,7 +52,7 @@ const MainMenu = () => {
         <hr />
         <Link to={"/ratings"} className=" text-decoration-none text-light">
           <Button variant="light" className="px-4 w-100">
-            Posts
+            Rating
           </Button>
         </Link>
         <hr />

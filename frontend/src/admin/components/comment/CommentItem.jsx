@@ -4,14 +4,22 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import CommentDetail from "./CommentDetail";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
 const CommentItem = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   const comment_text = "the food is good, the service is fine...";
+
+  const deleteingComment = () => {
+    window.confirm("Are you sure to delete?");
+  };
+
   return (
     <div>
       <Row>
-        <Col xs={8}>
+        <Col xs={7}>
           <Form.Group className="">
             <Form.Control
               required
@@ -41,6 +49,12 @@ const CommentItem = () => {
             <span>12:32 PM</span>
             <p>23 December,2024</p>
           </div>
+        </Col>
+        <Col xs={1}>
+          <Link className="text-decoration-none text-dark fs-4">
+            {" "}
+            <FontAwesomeIcon icon={faTrash} onClick={deleteingComment} />
+          </Link>
         </Col>
         <hr />
       </Row>

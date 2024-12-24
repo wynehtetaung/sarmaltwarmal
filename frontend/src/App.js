@@ -16,6 +16,8 @@ import AddPost from "./admin/components/posts/AddPost";
 import PostList from "./admin/components/posts/PostList";
 import User from "./admin/pages/User";
 import Comment from "./admin/pages/Comment";
+import Rating from "./admin/pages/Rating";
+import CardDetail from "./admin/components/card/CardDetail";
 
 const App = () => {
   return (
@@ -39,8 +41,10 @@ const App = () => {
         <Route path="/dashboard" element={<AdminHome />} />
         <Route path="/add_post" element={<AddPost />} />
         <Route path="/post_list" element={<PostList />} />
+        <Route path="/post_detail" element={<CardDetail />} />
         <Route path="/users" element={<User />} />
         <Route path="/comments" element={<Comment />} />
+        <Route path="/ratings" element={<Rating />} />
 
         {/* for admin */}
       </Routes>

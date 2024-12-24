@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import MainMenu from "../menu/MainMenu";
 import Form from "react-bootstrap/Form";
 
@@ -140,6 +140,9 @@ const AddPost = () => {
                     </Form.Group>
                   </Col>
                 </Row>
+                <Button variant="warning" className="w-100 mb-5">
+                  Add
+                </Button>
               </Form>
             </Container>
           </Col>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CardItem = ({ sm, xs }) => {
   return (
     <Col xs={xs} sm={sm}>
-      <Link to={"/food_detail"} className="text-decoration-none">
+      <Link to={"/post_detail"} className="text-decoration-none">
         <div>
           <img
             src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?w=600&auto=format&fit=crop&q=60&
