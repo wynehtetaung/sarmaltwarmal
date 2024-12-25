@@ -1,7 +1,6 @@
-import { Container, Form, Row, Col,Button } from "react-bootstrap";
+import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import BreadCrumb from "../components/BreadCrumb";
 import Before from "../components/search/Before";
 import After from "../components/search/After";
 
@@ -9,8 +8,6 @@ const Search = () => {
   return (
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
-
-      <BreadCrumb />
 
       <Container>
         <div className="my-3">
@@ -26,14 +23,13 @@ const Search = () => {
                   className="rounded-pill border-2 border-dark p-3"
                 />
               </div>
-             
             </Col>
           </Row>
         </div>
       </Container>
 
       {/* Before Search */}
-      <Before/>
+      <Before />
       {/* Before Search */}
 
       {/* After Search */}

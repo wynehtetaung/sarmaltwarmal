@@ -1,9 +1,8 @@
 import React from "react";
+import MainMenu from "../../components/menu/MainMenu";
 import { Col, Container, Row } from "react-bootstrap";
-import MainMenu from "../components/menu/MainMenu";
-import CommentList from "../components/rating/comment/CommentList";
 
-const Comment = () => {
+const Pagoda = () => {
   return (
     <div>
       <Container fluid>
@@ -15,7 +14,7 @@ const Comment = () => {
             </div>
           </Col>
           <Col xs={10}>
-            <CommentList />
+            <h1>this is pagoda</h1>
           </Col>
         </Row>
       </Container>
@@ -23,4 +22,4 @@ const Comment = () => {
   );
 };
 
-export default Comment;
+export default Pagoda;

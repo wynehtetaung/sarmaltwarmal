@@ -8,17 +8,45 @@ const MainMenu = () => {
     <Container className="sticky-top">
       <div className="fs-5 text-light text-center">
         <Link
-          to={"/dashboard"}
+          to={"/admin/dashboard"}
           className="fs-1 fw-semibold text-decoration-none text-light"
         >
           Admin
         </Link>
         <hr />
-        <Link to={"/dashboard"} className=" text-decoration-none text-light">
-          <Button variant="warning" className="px-4 w-100">
+        <Link
+          to={"/admin/dashboard"}
+          className=" text-decoration-none text-light"
+        >
+          <Button variant="" className="px-4 w-100 bg-brown">
             Dashboard
           </Button>
         </Link>
+        <hr />
+        <div>
+          <Dropdown data-bs-theme="dark">
+            <Dropdown.Toggle
+              variant="warning"
+              id="dropdown-basic"
+              className="w-100"
+            >
+              Collections
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href={"/admin/street_food"}>
+                Street Food
+              </Dropdown.Item>
+              <Dropdown.Item href={"/admin/cafe_shop"}>Cafe Shop</Dropdown.Item>
+              <Dropdown.Item href={"/admin/pagoda"}>Pagoda</Dropdown.Item>
+              <Dropdown.Item href={"/admin/restaurant"}>
+                Restaurant
+              </Dropdown.Item>
+
+              {/* <Dropdown.Item href={"/add_post"}>Add Post</Dropdown.Item> */}
+            </Dropdown.Menu>
+          </Dropdown>
+        </div>
         <hr />
         <div>
           <Dropdown data-bs-theme="dark">
@@ -31,26 +59,32 @@ const MainMenu = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href={"/add_post"}>Add Post</Dropdown.Item>
-              <Dropdown.Item href={"/post_list"}>Post List</Dropdown.Item>
+              <Dropdown.Item href={"/admin/add_post"}>Add Post</Dropdown.Item>
+              <Dropdown.Item href={"/admin/post_list"}>Post List</Dropdown.Item>
               {/* <Dropdown.Item href={"/add_post"}>Add Post</Dropdown.Item> */}
             </Dropdown.Menu>
           </Dropdown>
         </div>
         <hr />
-        <Link to={"/users"} className=" text-decoration-none text-light">
+        <Link to={"/admin/users"} className=" text-decoration-none text-light">
           <Button variant="primary" className="px-4 w-100">
             Users
           </Button>
         </Link>
         <hr />
-        <Link to={"/comments"} className=" text-decoration-none text-light">
+        <Link
+          to={"/admin/comments"}
+          className=" text-decoration-none text-light"
+        >
           <Button variant="secondary" className="px-4 w-100">
             Commments
           </Button>
         </Link>
         <hr />
-        <Link to={"/ratings"} className=" text-decoration-none text-light">
+        <Link
+          to={"/admin/ratings"}
+          className=" text-decoration-none text-light"
+        >
           <Button variant="light" className="px-4 w-100">
             Rating
           </Button>

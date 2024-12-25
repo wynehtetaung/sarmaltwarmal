@@ -5,6 +5,7 @@ import FoodPost from "../components/list/FoodPost";
 import TravelPost from "../components/list/TravelPost";
 import AllPost from "../components/list/AllPost";
 import { Button, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const List = () => {
   return (
@@ -14,15 +15,21 @@ const List = () => {
       <Container>
         <Row className="text-center">
           <div className="my-3">
-            <Button variant="warning" className="rounded-pill px-4 me-3">
-              All
-            </Button>
-            <Button variant="dark" className="rounded-pill px-4 me-3">
-              Food
-            </Button>
-            <Button variant="dark" className="rounded-pill px-4">
-              Place
-            </Button>
+            <Link to={"/list"}>
+              <Button variant="warning" className="rounded-pill px-4 me-3">
+                All
+              </Button>
+            </Link>
+            <Link to={"/list/food"}>
+              <Button variant="dark" className="rounded-pill px-4 me-3">
+                Food
+              </Button>
+            </Link>
+            <Link to={"/list/place"}>
+              <Button variant="dark" className="rounded-pill px-4 me-3">
+                Place
+              </Button>
+            </Link>
           </div>
         </Row>
         <p className="fs-000 text-decoration-underline text-end mb-4">
@@ -30,8 +37,7 @@ const List = () => {
         </p>
       </Container>
       <AllPost />
-      <FoodPost />
-      <TravelPost />
+
       <Footer />
     </div>
   );

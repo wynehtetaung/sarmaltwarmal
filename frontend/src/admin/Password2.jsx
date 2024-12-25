@@ -25,7 +25,7 @@ const Password2 = () => {
                 />
               </Form.Group>
               <div className="text-center">
-                <Link to={"/dashboard"}>
+                <Link to={"/admin/dashboard"}>
                   <Button variant="warning" className=" px-5">
                     Login
                   </Button>

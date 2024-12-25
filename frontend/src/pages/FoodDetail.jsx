@@ -1,17 +1,24 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import BreadCrumb from "../components/BreadCrumb";
 
 import InfoBox from "../components/detail page/InfoBox";
 import Comments from "../components/detail page/Comments";
 import Reviews from "../components/detail page/Reviews";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+
 const FoodDetail = () => {
+  const [like, setLike] = React.useState("text-dark");
+
+  const activeLike = () => {
+    setLike("text-warning");
+  };
   return (
     <div>
       <Navbar />
-      <BreadCrumb />
       <div className="container" fluid>
         <div className="mt-5">
           <Row className="g-0">
@@ -25,14 +32,26 @@ const FoodDetail = () => {
             <Col className="my-auto">
               <div className="px-5 pt-3">
                 <p className="fs-1 fw-semibold title1">YANGON TEE HOUSE</p>
-                <p className="fs-6">Food :</p>
-                <p className="fs-6">Location : </p>
+                {/* <p className="fs-6">Food :</p> */}
+                {/* <p className="fs-6">Location : </p> */}
                 <p className="fs-6 fs-00">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
                   odio rerum maiores provident cumque non itaque, iusto nisi
                   quasi enim laboriosam dolore iste veniam omnis distinctio
                   vitae, aliquam debitis accusamus.
                 </p>
+                <p className="fs-1 fs-000">
+                  <span className="fs-3 me-3 "> Like this food?</span>
+                  <FontAwesomeIcon
+                    icon={faThumbsUp}
+                    className={like}
+                    onClick={activeLike}
+                  />
+                </p>
+                {/* className={({ isActive }) => {
+               return isActive ? "active-link" : "";
+              }} */}
+
                 <p className="fs-000 fs-6 text-decoration-underline">
                   20 December, 2024
                 </p>

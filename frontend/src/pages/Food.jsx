@@ -1,34 +1,39 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import FoodCard from "../components/cards/FoodCard";
-import { Container, Row } from "react-bootstrap";
-import BreadCrumb from "../components/BreadCrumb";
+import { Container, Row, Button } from "react-bootstrap";
+import FoodPost from "../components/list/FoodPost";
+import { Link } from "react-router-dom";
 
 const Food = () => {
   return (
     <div>
       <Navbar />
-      <BreadCrumb />
-      <Container>
-        <div className="my-5">
-          <p className="text-end  text-decoration-underline">
-            There are 21 Food Items
-          </p>
-          <Row>
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-            <FoodCard xs={3} />
-          </Row>
-        </div>
-      </Container>
 
+      <Container>
+        <Row className="text-center">
+          <div className="my-3">
+            <Link to={"/list"}>
+              <Button variant="dark" className="rounded-pill px-4 me-3">
+                All
+              </Button>
+            </Link>
+            <Link to={"/list/food"}>
+              <Button variant="warning" className="rounded-pill px-4 me-3">
+                Food
+              </Button>
+            </Link>
+            <Link to={"/list/place"}>
+              <Button variant="dark" className="rounded-pill px-4 me-3">
+                Place
+              </Button>
+            </Link>
+          </div>
+        </Row>
+        <p className="fs-000 text-decoration-underline text-end mb-4">
+          There are 21 items
+        </p>
+      </Container>
+      <FoodPost />
       <Footer />
     </div>
   );

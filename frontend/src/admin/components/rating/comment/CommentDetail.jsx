@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Card from "../../../components/cards/FoodCard";
+import Card from "../../../../components/cards/FoodCard";
 
 const CommentDetail = (props) => {
   return (

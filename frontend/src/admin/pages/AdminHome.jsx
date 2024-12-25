@@ -3,6 +3,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import MainMenu from "../components/menu/MainMenu";
 import Dashboard from "./Dashboard";
+import { Route, Routes } from "react-router-dom";
 
 const AdminHome = () => {
   return (
@@ -17,6 +18,9 @@ const AdminHome = () => {
           </Col>
           <Col xs={10}>
             <Dashboard />
+            {/* <Routes>
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+            </Routes> */}
           </Col>
         </Row>
       </Container>

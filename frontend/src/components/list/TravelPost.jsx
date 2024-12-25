@@ -10,6 +10,10 @@ const TravelPost = () => {
           <PlaceCard xs={6} sm={3} />
           <PlaceCard xs={6} sm={3} />
           <PlaceCard xs={6} sm={3} />
+          <PlaceCard xs={6} sm={3} />
+          <PlaceCard xs={6} sm={3} />
+          <PlaceCard xs={6} sm={3} />
+          <PlaceCard xs={6} sm={3} />
         </Row>
       </Container>
     </div>

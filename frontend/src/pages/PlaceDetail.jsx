@@ -1,5 +1,4 @@
 import React from "react";
-import BreadCrumb from "../components/BreadCrumb";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Col, Container, Row } from "react-bootstrap";
@@ -7,12 +6,17 @@ import Reviews from "../components/detail page/Reviews";
 import Comments from "../components/detail page/Comments";
 import InfoBox from "../components/detail page/InfoBox";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 const PlaceDetail = () => {
+  const [like, setLike] = React.useState("text-dark");
+
+  const activeLike = () => {
+    setLike("text-warning");
+  };
   return (
     <div>
       <Navbar />
-      <BreadCrumb />
-
       <Container fluid>
         <Row>
           <Col>
@@ -46,6 +50,14 @@ const PlaceDetail = () => {
                   nemo enim quod natus excepturi ipsa? Ullam cupiditate corrupti
                   quidem in quos pariatur, dolorum rem exercitationem laudantium
                   possimus nobis ad.
+                </p>
+                <p className="fs-1 fs-000">
+                  <span className="fs-3 me-3 "> Like this place?</span>
+                  <FontAwesomeIcon
+                    icon={faThumbsUp}
+                    className={like}
+                    onClick={activeLike}
+                  />
                 </p>
               </div>
             </Col>

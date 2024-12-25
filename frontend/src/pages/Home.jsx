@@ -5,12 +5,14 @@ import Footer from "../components/Footer";
 import AboutUs from "../components/home/AboutUs";
 import Banner from "../components/home/Banner";
 import Collections from "../components/home/Collections";
+import RatingItem from "../components/home/RatingItem";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Banner />
+      <RatingItem />
       <Collections />
       <Recent />
       <AboutUs />

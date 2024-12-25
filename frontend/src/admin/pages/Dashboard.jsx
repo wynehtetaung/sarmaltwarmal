@@ -4,6 +4,8 @@ import BasicInfo from "../components/dashboard/BasicInfo";
 import Head from "../components/dashboard/Head";
 import RecentUser from "../components/dashboard/RecentUser";
 import RecentPost from "../components/dashboard/RecentPost";
+import { Route, Routes } from "react-router-dom";
+import AddPost from "./posts/AddPost";
 
 const Dashboard = () => {
   return (

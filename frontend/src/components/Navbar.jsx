@@ -23,13 +23,14 @@ const NNavbar = () => {
             style={{ maxHeight: "150px" }}
             navbarScroll
           >
-            <Nav.Link active href="/" className="me-3">
+            <Nav.Link href="/home" className="me-3">
               Home
             </Nav.Link>
-            <Nav.Link href="/food" className="me-3">
+
+            <Nav.Link href="/list/food" className="me-3">
               Foods
             </Nav.Link>
-            <Nav.Link href="/place" className="me-3">
+            <Nav.Link href="/list/place" className="me-3">
               Places
             </Nav.Link>
             <Nav.Link href="/food_detail" className="me-3">
@@ -38,55 +39,25 @@ const NNavbar = () => {
             <Nav.Link href="/place_detail" className="me-3">
               PlaceDetail
             </Nav.Link>
-            <Nav.Link href="/collections" className="me-3">
-              Collections
-            </Nav.Link>
-            <Nav.Link href="/search" className="me-3">
+
+            {/* <Nav.Link href="/search" className="me-3">
               Search
-            </Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            </Nav.Link> */}
           </Nav>
           <Form className="d-flex">
-            {/* <Form.Control
-              type="search"
-              placeholder="Login"
-              className="rounded-pill"
-              aria-label="Search"
-              size="lg"
-
-            /> */}
-
-            {/* <Button
-              onClick={() => setModalShow(true)}
-              icon={faUser}
-              variant="dark"
-              className="bg-opacity-25 rounded-pill px-3 me-3"
-            >
-              Login
-            </Button> */}
-
-            {/* <Login show={modalShow} onHide={() => setModalShow(false)} /> */}
-
-            <Link to={"/profile"}>
-              <FontAwesomeIcon
-                icon={faUser}
-                className="fs-3 text-dark mt-1 me-4 text-decoration-none"
+            <Link className="me-5" to={"/profile"}>
+              <img
+                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt=""
+                className="rounded-circle text-end"
+                style={{ width: "45px" }}
               />
             </Link>
 
             <Link to={"/search"}>
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
-                className="fs-3 text-dark opacity-75 mt-1 me-3 text-decoration-none"
+                className="fs-3 text-dark opacity-75 mt-2 text-decoration-none"
               />
             </Link>
           </Form>

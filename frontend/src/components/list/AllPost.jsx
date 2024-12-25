@@ -11,6 +11,11 @@ const AllPost = () => {
           <Card xs={6} sm={3} />
           <Card xs={6} sm={3} />
           <Card xs={6} sm={3} />
+          <Card xs={6} sm={3} />
+          <Card xs={6} sm={3} />
+          <Card xs={6} sm={3} />
+          <Card xs={6} sm={3} />
+          <Card xs={6} sm={3} />
         </Row>
       </Container>
     </div>

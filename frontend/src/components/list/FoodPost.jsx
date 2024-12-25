@@ -10,6 +10,10 @@ const FoodPost = () => {
           <FoodCard xs={6} sm={3} />
           <FoodCard xs={6} sm={3} />
           <FoodCard xs={6} sm={3} />
+          <FoodCard xs={6} sm={3} />
+          <FoodCard xs={6} sm={3} />
+          <FoodCard xs={6} sm={3} />
+          <FoodCard xs={6} sm={3} />
         </Row>
       </Container>
     </div>

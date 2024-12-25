@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Col, Container, Row } from "react-bootstrap";
-import MainMenu from "../menu/MainMenu";
-import CardItem from "../card/CardItem";
+import MainMenu from "../../components/menu/MainMenu";
+import CardItem from "../../components/card/CardItem";
 
 const PostList = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import MainMenu from "../menu/MainMenu";
 import Form from "react-bootstrap/Form";
+import MainMenu from "../../components/menu/MainMenu";
 
 const AddPost = () => {
   // for img uploading
