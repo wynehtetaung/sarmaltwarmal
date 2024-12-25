@@ -2,9 +2,15 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 const adminRouter = require("./router/admin.router.js");
 
-app.use(express.json());
+// app.use(express.json());
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use("/static", express.static("./upload"));
 
 app.use("/api/v1/admin", adminRouter);
 
